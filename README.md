@@ -21,7 +21,7 @@
 
 ---
 
-Ce projet a été réalisé par [Charles Viterbo](https://intra.epitech.eu/user/charles.viterbo@epitech.eu/), [Alexandre Chenevier](https://intra.epitech.eu/user/alexandre2.chenevier@epitech.eu] et [Fabien Martinez](https://intra.epitech.eu/user/fabien.martinez@epitech.eu/).
+Ce projet a été réalisé par [Charles Viterbo](https://intra.epitech.eu/user/charles.viterbo@epitech.eu/), [Alexandre Chenevier](https://intra.epitech.eu/user/alexandre2.chenevier@epitech.eu) et [Fabien Martinez](https://intra.epitech.eu/user/fabien.martinez@epitech.eu/).
 Le projet a pour but de développer une application iOS permettant la gestion de taches via une matrice Einsenhower.
 
 ## Screenshots de l'application
