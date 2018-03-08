@@ -37,7 +37,7 @@ A rajouter !
 
 ## Sujet
 
-Voici le bootstrap du projet: 
+Voici le bootstrap du projet:
 https://github.com/fredfoc/EpitechEisenhower
 
 [fredfoc/EpitechEisenhower](https://github.com/fredfoc/EpitechEisenhower)
@@ -47,13 +47,13 @@ Il s'agit donc de developper une app permettant la gestion de taches via une mat
 
 Les criteres de jugement :
 
-- qualite du code (clean code) et maitrise du language 
-- qualite de l'architecture (clean architecture/VIPR, MVC, MVVM, etc.) 
-- qualite des tests unitaires et code coverage sur les classes business 
-- qualite du d�veloppement UI en respect avec les requirements 
-- qualite globale du projet (investissement general, professionnalisme sur le projet, usage de librairies externes coherent, tests UI, CI, git flow respecte et commits coherents, commentaires de code, code quality tools, documentation, etc.) 
+- qualite du code (clean code) et maitrise du language
+- qualite de l'architecture (clean architecture/VIPR, MVC, MVVM, etc.)
+- qualite des tests unitaires et code coverage sur les classes business
+- qualite du developpement UI en respect avec les requirements
+- qualite globale du projet (investissement general, professionnalisme sur le projet, usage de librairies externes coherent, tests UI, CI, git flow respecte et commits coherents, commentaires de code, code quality tools, documentation, etc.)
 
-Ce projet sera rendu sur un repo GIT public, pour le 3 avril maximum. 
+Ce projet sera rendu sur un repo GIT public, pour le 3 avril maximum.
 Vous pouvez le faire en solo ou en groupe (4 personnes max.).
 
 ## Equipe
