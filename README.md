@@ -87,6 +87,14 @@ Nous permet d'étendre les fonctionnalités d'Alamofire aux images
 
 Framework nécessaire pour les autres frameworks
 
+### ReactiveSwift
+
+Utilisé pour gérer le binding en MVVM
+
+### Result
+
+Dépendance de [ReactiveSwift](#reactiveswift)
+
 ## Détails
 
 pass
