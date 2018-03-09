@@ -33,6 +33,7 @@ A rajouter !
 - [Sujet](#sujet)
 - [Equipe](#equipe)
 - [Fonctionnalités](#fonctionnalités)
+- [Frameworks](#frameworks)
 - [Détails](#details)
 
 ## Sujet
@@ -67,6 +68,24 @@ L'équipe est composée de 3 membres :
 ## Fonctionnalités
 
 iOS 11
+
+## Frameworks
+
+### Argo
+
+Nous permet de parser facilement le json reçu via Firebase
+
+### Alamofire
+
+Nous permet d'effectuer proprement nos requêtes HTTP avec Firebase / Facebook / Google+
+
+### AlamofireImage
+
+Nous permet d'étendre les fonctionnalités d'Alamofire aux images
+
+### Runes
+
+Framework nécessaire pour les autres frameworks
 
 ## Détails
 
