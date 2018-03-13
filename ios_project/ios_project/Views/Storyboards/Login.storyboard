@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2E9-Wr-xvz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Q7k-Cm-qoK">
+            <objects>
+                <navigationController id="2E9-Wr-xvz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LM6-IE-2jm">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.50196078430000002" green="0.79215686269999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="k64-y2-42U" kind="relationship" relationship="rootViewController" id="4dP-Ty-RMy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Op-vs-pD2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-265" y="35"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="PHk-vO-GkI">
+            <objects>
+                <viewController title="Login" id="k64-y2-42U" userLabel="Login View Controller" customClass="LoginViewController" customModule="ios_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BW4-gd-WEc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bug-j8-hFE">
+                                <rect key="frame" x="112" y="309" width="150" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.72549019609999998" blue="0.2156862745" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" hint="Button for connection" identifier="ConnectButton" label="Connect"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="SoI-gf-Gtf"/>
+                                    <constraint firstAttribute="height" constant="50" id="fdp-Ao-HC0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                                <state key="normal" title="Connect">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="connect:" destination="k64-y2-42U" eventType="touchUpInside" id="nv9-7z-3G0"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="facebook-logo" translatesAutoresizingMaskIntoConstraints="NO" id="hwY-HC-EYc">
+                                <rect key="frame" x="85" y="441" width="90" height="55"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="google-plus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="bQc-Rz-3jE">
+                                <rect key="frame" x="200" y="441" width="90" height="55"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfT-Us-zlu">
+                                <rect key="frame" x="112" y="511" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.90980392156862744" blue="0.10980392156862745" alpha="0.79993578767123297" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" hint="Button for connection" identifier="ConnectButton" label="Connect"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Gpl-6Y-y6R"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="byU-YL-EP8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="gT4-Uw-i5Z" kind="presentation" id="DuL-ma-2uV"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="****" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mCO-lg-uwK" customClass="TextField" customModule="ios_project" customModuleProvider="target">
+                                <rect key="frame" x="32" y="223" width="310" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.050980392156862744" green="0.62745098039215685" blue="0.69803921568627447" alpha="0.80115582191780821" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="insetX">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1S3-sc-LMb" customClass="TextField" customModule="ios_project" customModuleProvider="target">
+                                <rect key="frame" x="32" y="163" width="310" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.050980392156862744" green="0.62745098039215685" blue="0.69803921568627447" alpha="0.80115582191780821" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="insetX">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196078430000002" green="0.79215686269999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nOb-gB-0j6" firstAttribute="bottom" secondItem="bug-j8-hFE" secondAttribute="bottom" constant="308" id="0XB-YE-7hE"/>
+                            <constraint firstItem="DfT-Us-zlu" firstAttribute="leading" secondItem="bug-j8-hFE" secondAttribute="leading" id="XH9-2A-CUm"/>
+                            <constraint firstItem="bQc-Rz-3jE" firstAttribute="leading" secondItem="hwY-HC-EYc" secondAttribute="trailing" constant="25" id="Xrx-M9-feC"/>
+                            <constraint firstItem="nOb-gB-0j6" firstAttribute="bottom" secondItem="DfT-Us-zlu" secondAttribute="bottom" constant="106" id="eFI-A0-j81"/>
+                            <constraint firstItem="hwY-HC-EYc" firstAttribute="leading" secondItem="nOb-gB-0j6" secondAttribute="leading" constant="85" id="eUV-Ed-dbd"/>
+                            <constraint firstItem="bug-j8-hFE" firstAttribute="centerX" secondItem="BW4-gd-WEc" secondAttribute="centerX" id="fHC-SY-Y3l"/>
+                            <constraint firstItem="DfT-Us-zlu" firstAttribute="top" secondItem="hwY-HC-EYc" secondAttribute="bottom" constant="15" id="gre-WX-f3o"/>
+                            <constraint firstItem="hwY-HC-EYc" firstAttribute="top" secondItem="bQc-Rz-3jE" secondAttribute="top" id="sde-rM-yDa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nOb-gB-0j6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="2kU-70-MBy"/>
+                    <connections>
+                        <outlet property="connectButton" destination="bug-j8-hFE" id="pmt-a8-Qjg"/>
+                        <outlet property="emailTextField" destination="1S3-sc-LMb" id="QZc-f1-iq2"/>
+                        <outlet property="passwordTextField" destination="mCO-lg-uwK" id="Mno-UY-smJ"/>
+                        <outlet property="signInButton" destination="DfT-Us-zlu" id="st2-at-swy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="33m-Ak-1VH" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012" y="35"/>
+        </scene>
+        <!--Signin View Controller-->
+        <scene sceneID="IaK-U9-iGC">
+            <objects>
+                <viewController title="Login" id="Kde-WF-qhS" userLabel="Signin View Controller" customClass="SignupViewController" customModule="ios_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HB1-5d-OUi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HEY-lw-Way" customClass="TextField" customModule="ios_project" customModuleProvider="target">
+                                <rect key="frame" x="32" y="147" width="310" height="44"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.62745098040000002" blue="0.69803921570000005" alpha="0.80115582190000001" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="8an-wX-GVV"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="insetX">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnS-sE-KVq">
+                                <rect key="frame" x="112" y="375" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.90980392160000001" blue="0.10980392160000001" alpha="0.79993578769999996" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" hint="Button for connection" identifier="ConnectButton" label="Connect"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2wW-C2-f0z"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="yBh-rE-CIP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signUpAction:" destination="Kde-WF-qhS" eventType="touchUpInside" id="MdY-sd-6Cr"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gyA-Qn-oPr" customClass="TextField" customModule="ios_project" customModuleProvider="target">
+                                <rect key="frame" x="32" y="212" width="310" height="44"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.62745098040000002" blue="0.69803921570000005" alpha="0.80115582190000001" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hZW-ih-zQL"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="insetX">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password confirmation" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3V7-e8-SAl" customClass="TextField" customModule="ios_project" customModuleProvider="target">
+                                <rect key="frame" x="32" y="278" width="310" height="44"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.62745098040000002" blue="0.69803921570000005" alpha="0.80115582190000001" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="PpZ-QK-hox"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="insetX">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196078430000002" green="0.79215686269999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="HEY-lw-Way" firstAttribute="centerX" secondItem="ZnS-sE-KVq" secondAttribute="centerX" id="3c0-Wf-7Ve"/>
+                            <constraint firstItem="ZnS-sE-KVq" firstAttribute="top" secondItem="3V7-e8-SAl" secondAttribute="bottom" constant="53" id="3wP-ce-uVf"/>
+                            <constraint firstItem="HEY-lw-Way" firstAttribute="top" secondItem="sV0-9N-3l0" secondAttribute="top" constant="83" id="BIR-mJ-Fsq"/>
+                            <constraint firstItem="HEY-lw-Way" firstAttribute="leading" secondItem="3V7-e8-SAl" secondAttribute="leading" id="HqD-Wd-CW4"/>
+                            <constraint firstItem="HEY-lw-Way" firstAttribute="trailing" secondItem="gyA-Qn-oPr" secondAttribute="trailing" id="WjQ-sE-kXK"/>
+                            <constraint firstItem="gyA-Qn-oPr" firstAttribute="top" secondItem="HEY-lw-Way" secondAttribute="bottom" constant="21" id="bUa-Bs-Ced"/>
+                            <constraint firstItem="HEY-lw-Way" firstAttribute="leading" secondItem="sV0-9N-3l0" secondAttribute="leading" constant="32" id="brU-hM-3IO"/>
+                            <constraint firstItem="ZnS-sE-KVq" firstAttribute="centerX" secondItem="HB1-5d-OUi" secondAttribute="centerX" id="cqx-4t-Fck"/>
+                            <constraint firstItem="HEY-lw-Way" firstAttribute="trailing" secondItem="3V7-e8-SAl" secondAttribute="trailing" id="jtV-vL-nSx"/>
+                            <constraint firstItem="HEY-lw-Way" firstAttribute="leading" secondItem="gyA-Qn-oPr" secondAttribute="leading" id="ke9-aD-d4e"/>
+                            <constraint firstItem="3V7-e8-SAl" firstAttribute="top" secondItem="gyA-Qn-oPr" secondAttribute="bottom" constant="22" id="v5n-N6-11k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sV0-9N-3l0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign In" id="VkS-hx-I15">
+                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" style="plain" id="dEE-7T-NYt">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="eIP-ig-dDI" kind="unwind" unwindAction="backToLogin:" id="mbs-mj-bkG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="HEY-lw-Way" id="k1m-Nm-TWk"/>
+                        <outlet property="password2TextField" destination="3V7-e8-SAl" id="2Sw-yb-awR"/>
+                        <outlet property="passwordTextField" destination="gyA-Qn-oPr" id="Cdk-RY-trh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bjj-4x-X5N" sceneMemberID="firstResponder"/>
+                <exit id="eIP-ig-dDI" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="744.79999999999995" y="917.99100449775119"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="814-Qm-Q6z">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MWX-N7-nIp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="gT4-Uw-i5Z" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Egd-xS-1f6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.50196078430000002" green="0.79215686269999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Kde-WF-qhS" kind="relationship" relationship="rootViewController" id="C38-PE-d1C"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-356" y="918"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="facebook-logo" width="90" height="55"/>
+        <image name="google-plus-logo" width="90" height="55"/>
+    </resources>
+</document>
